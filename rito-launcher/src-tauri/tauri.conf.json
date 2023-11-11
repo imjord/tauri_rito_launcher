@@ -35,10 +35,10 @@
     "windows": [
       {
         "fullscreen": false,
-        "resizable": true,
+        "resizable": false,
         "title": "rito-launcher",
-        "width": 800,
-        "height": 600
+        "width": 1540,
+        "height": 840
       }
     ]
   }
