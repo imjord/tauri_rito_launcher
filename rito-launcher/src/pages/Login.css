@@ -70,7 +70,7 @@
 }
 
 .login-title h3 {
-  font-size: 30px;
+  font-size: 25px;
   margin: 20px;
 }
 
@@ -89,7 +89,20 @@
 .login-form input {
   margin: 5px;
   padding: 10px;
+  outline: none;
+  border: none;
   width: 80%;
+  background-color:  rgb(233, 229, 229);
+}
+
+.login-form input:hover {
+  
+  filter: brightness(0.95);
+}
+
+.login-form input::placeholder {
+  font-size: 11px;
+  color: black;
 }
 
 .login-brand-btns {
@@ -166,7 +179,14 @@ width: 100%;  }
   width: 100%;
   margin: 5px;
   width: 80%;
+  font-size: 14px;
+  font-weight: 550;
 }
+
+input[type="checkbox"]:checked {
+  background-color: red;
+}
+
 
 .login-stay-signed input  {
   margin: 5px;
@@ -186,8 +206,9 @@ width: 100%;  }
   align-items: center;
   font-size: 30px;
   background-color: whitesmoke;
-  border: 2px solid gray;
+  border: 2px solid rgba(215, 210, 210, 0.975);
   padding: 15px;
+  color: rgba(215, 210, 210, 0.975);
   border-radius: 25px;
   height: 80px;
   margin-top: 50px;
@@ -212,29 +233,49 @@ width: 100%;  }
  width: 60%;
  justify-content: flex-end;
  margin-left: 1px;
- color: gray;
  font-weight: 700;
- font-size: 12px;
+ font-size: 10px;
+ color: rgb(144, 142, 142);
+
 }
 
 .login-footer div:nth-child(1) p:nth-child(2){
  display: flex;
  width: 40%;
  justify-content: center;
+ font-size: 10px;
+ font-weight: 700;
+
+ color: rgb(144, 142, 142);
+
+
 
 }
+.login-footer div:nth-child(1) p:nth-child(1):hover {
+
+  filter: brightness(0.4);
+ cursor: pointer;
+ 
+ }
+
+.login-footer div:nth-child(1) p:nth-child(2):hover {
+
+  filter: brightness(0.4);
+ cursor: pointer;
+ 
+ }
 
 .login-footer div:nth-child(2) {
   display: flex;
-  font-size: 11px;
+  font-size: 9px;
   height: 50%;
   justify-content: flex-end;
   width: 100%;
+
 }
 .login-footer div:nth-child(2) p{
   text-align: center;
-  padding: 10px;
-  
-
-
+  padding: 15px;
+  font-weight: 700;
+  color: rgb(144, 142, 142);
 }
