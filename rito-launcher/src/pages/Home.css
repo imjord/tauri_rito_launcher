@@ -1,0 +1,99 @@
+.home {
+    background-color: rgb(44, 43, 43);
+    height: 200vh;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.home-wrapper {
+    color: whitesmoke;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+
+
+
+
+.mygames-container {
+    margin-top: 50px;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.mygames-wrapper {
+    height: 100%;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mygames-title {
+    margin-left: 20px;
+}
+
+.mygames-wrapper div {
+    margin: 20px;
+}
+
+.mygames-wrapper div:nth-child(1) h2{
+
+        font-size: 40px;
+}
+
+.mygames {
+    display: flex;
+}
+
+.mygames img {
+    border-radius: 8px;
+}
+
+.mygames h2 {
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 15px;
+
+}
+
+.wtf {
+    font-size: 20px !important;
+}
+
+.mygames div {
+    position: relative;
+}
+
+.mygames div:hover img {
+    animation: bounce 1s ease, flash 3s;
+    cursor: pointer;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  @keyframes flash {
+    0%, 100% {
+      box-shadow: 7px 7px 7px 10px blueviolet;
+    }
+    50% {
+      box-shadow: none;
+    }
+  }
