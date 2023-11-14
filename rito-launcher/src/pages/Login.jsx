@@ -43,8 +43,8 @@ const Login = (props) => {
           </div>
           <div className='login-form'>
              <form id="loginForm">
-              <input onClick={() => handleErrorInput()} className={error ? "error-input" : ""} placeholder='USERNAME' id='username' type='text' onChange={(e) => setUsername(e.target.value) } />
-              <input  onClick={() => handleErrorInput()} className={error ? "error-input" :  ""}  placeholder='PASSWORD' id='password' type='password' onChange={(e) => setPassword(e.target.value) } />
+              <input autocomplete="off" list="autocompleteOff" onClick={() => handleErrorInput()} className={error ? "error-input" : ""} placeholder='USERNAME' id='username' type='text' onChange={(e) => setUsername(e.target.value) } />
+              <input autocomplete="off" list="autocompleteOff"  onClick={() => handleErrorInput()} className={error ? "error-input" :  ""}  placeholder='PASSWORD' id='password' type='password' onChange={(e) => setPassword(e.target.value) } />
              </form>
              <div className='login-brand-btns'>
               <div> <FontAwesomeIcon id='facebook-icon' className='login-btns' icon={faFacebook} /></div>

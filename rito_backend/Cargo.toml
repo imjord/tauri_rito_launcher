@@ -1,0 +1,15 @@
+[package]
+name = "rito_backend"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+mongodb = "2.7.0"
+actix-web = "4"
+serde_json = "1.0.108"
+serde = { version = "1.0", features = ["derive"] }
+futures-util = "0.3.29"
+bcrypt = "0.15"
+actix-cors = "0.6.4"
