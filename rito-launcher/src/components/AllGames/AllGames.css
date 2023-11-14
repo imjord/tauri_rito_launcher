@@ -1,0 +1,65 @@
+.allgames {
+    height: 100vh;
+    background-color: rgb(24, 24, 24);
+}
+
+.allgames-wrapper {
+    height: 100%;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.allgames-title {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+
+.allgames-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.allgames-list h2 {
+  display: flex;
+  align-items: center;
+
+}
+
+
+.allgames-list div {
+    margin: 10px;
+}
+
+.allgames-list img {
+    border-radius: 10px;
+}
+
+
+.allgames img:hover {
+    animation: bounce 1s ease, flash 3s;
+    cursor: pointer;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  @keyframes flash {
+    0%, 100% {
+      box-shadow: 7px 7px 7px 10px blueviolet;
+    }
+    50% {
+      box-shadow: none;
+    }
+  }

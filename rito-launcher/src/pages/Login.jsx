@@ -8,10 +8,8 @@ import ritologo from "../assets/ritologo0.webp";
 import ritologo0 from "../assets/rito2.png";
 import spinner from "../assets/spinner.svg";
 const Login = (props) => {
-  const {user, setUser, color, setColor, login, loading, error, handleErrorInput} = props;
+  const {user,username, password, setUser, setUsername, setPassword, color, setColor, login, loading, error, handleErrorInput} = props;
 
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
 
   const [errorMsg, setErrorMsg] = useState("");
 

@@ -1,42 +1,27 @@
 import React from 'react'
 import "./Home.css"; 
-import league from "../assets/league.png";
-import valorant from "../assets/valorant.png";
-import teamfight from "../assets/teamfight.png";
+import MyGames from '../components/MyGames/MyGames';
+import AllGames from '../components/AllGames/AllGames';
+import SpecialEvents from '../components/SpecialEvents/SpecialEvents';
+import {faArrowRight, faUser} from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Home = () => {
   return (
     <div className='home'>
+      
         <div className='home-wrapper'>
+        <div className='settings-home'>
+        <div>
+          <FontAwesomeIcon className='setting-avatar-home' icon={faUser}/>
+        </div>
+      </div>
         <nav className='nav'>
-            <h2>Riot GAmes</h2>
+            <h2>Riot Games</h2>
         </nav>
-        <div className='mygames-container'>
-            <div className='mygames-wrapper'>
-            <div>
-                <h2 className='mygames-title'>My Games</h2>
-            </div>
-            <div className='mygames'>
-                <div>
-                    <img src={league} />
-                    <h2 className='wtf'>League of legends</h2>
-                </div>
-                <div>
-                <img src={valorant} />
-                <h2>Valorant</h2>
-
-                    </div>
-                    <div>
-                    <img src={teamfight} />
-                    <h2>Teamfight</h2>
-                    </div>
-            </div>
-            </div>
-           
-        </div>
-        <div className='all-games'>
-
-        </div>
+        <MyGames />
+        <AllGames />
+        <SpecialEvents />
         </div>
       
     </div>
